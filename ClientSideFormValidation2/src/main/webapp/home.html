@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Server Side Form Validation</title>
+	</head>
+	<body>
+		<div style="text-align:center">
+	   		<form action="client" method="get" onsubmit="return validateForm(this)">
+            	Name : <input type="text" name="pname" > <br> <br>
+	            Age : <input type="number" name="age"> <br> <br>
+	            Email : <input type="text" name="email"> <br> <br>
+	            Phone : <input type="number" name="phone"> <br> <br>
+	            Male : <input type="radio" value="1" name="gender"> <br> <br>
+	            Female : <input type="radio"  value="2" name="gender"> <br> <br>
+	            <input type="submit" value="Submit">	
+        	</form>
+     	</div>
+	</body>
+	<script type="text/javascript">
+		function validateForm(frm){
+			let flag = true;
+			if(pname==""){
+				alert("Name must be required");
+				frm.pname.focus();
+				flag = false;				
+			} // if
+			if(email==""){
+				alert("Email must be required");
+				frm.email.focus();
+				flag = false;
+			} // if
+			if(gender==0){
+				alert("Gender must be required");
+				frm.gender.focus();
+				flag = false;				
+			} // if
+			return flag;
+		} // function
+	</script>
+</html>
