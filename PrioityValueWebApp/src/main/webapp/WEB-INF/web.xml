@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>PrioityValueWebApp</display-name>
+  <welcome-file-list>
+    <welcome-file>home.html</welcome-file>
+  </welcome-file-list>
+  <!--  Servlet Configuration -->
+  <servlet>
+  		<servlet-name>html</servlet-name>
+  		<servlet-class>com.kedar.servlets.HTMLServlet</servlet-class>
+  		<load-on-startup>1</load-on-startup>
+  </servlet>
+  <!-- Servlet Mapping Configuration -->
+  	<servlet-mapping>
+  		<servlet-name>html</servlet-name>
+  		<url-pattern>/html</url-pattern>
+  	</servlet-mapping>
+  	  <!--  Servlet Configuration -->
+  <servlet>
+  		<servlet-name>plain</servlet-name>
+  		<servlet-class>com.kedar.servlets.PlainServlet</servlet-class>
+  		<load-on-startup>2</load-on-startup>
+  </servlet>
+  <!-- Servlet Mapping Configuration -->
+  	<servlet-mapping>
+  		<servlet-name>plain</servlet-name>
+  		<url-pattern>/plain</url-pattern>
+  	</servlet-mapping>
+  	  <!--  Servlet Configuration -->
+  <servlet>
+  		<servlet-name>xml</servlet-name>
+  		<servlet-class>com.kedar.servlets.XMLServlet</servlet-class>
+  		<load-on-startup>3</load-on-startup>
+  </servlet>
+  <!-- Servlet Mapping Configuration -->
+  	<servlet-mapping>
+  		<servlet-name>xml</servlet-name>
+  		<url-pattern>/xml</url-pattern>
+  	</servlet-mapping>
+  	  <!--  Servlet Configuration -->
+  <servlet>
+  		<servlet-name>word</servlet-name>
+  		<servlet-class>com.kedar.servlets.MSWordServlet</servlet-class>
+  		<load-on-startup>4</load-on-startup>
+  </servlet>
+  <!-- Servlet Mapping Configuration -->
+  	<servlet-mapping>
+  		<servlet-name>word</servlet-name>
+  		<url-pattern>/word</url-pattern>
+  	</servlet-mapping>
+  	  <!--  Servlet Configuration -->
+  <servlet>
+  		<servlet-name>excel</servlet-name>
+  		<servlet-class>com.kedar.servlets.ExcelServlet</servlet-class>
+  		<load-on-startup>0</load-on-startup>
+  </servlet>
+  <!-- Servlet Mapping Configuration -->
+  	<servlet-mapping>
+  		<servlet-name>excel</servlet-name>
+  		<url-pattern>/excel</url-pattern>
+  	</servlet-mapping>
+</web-app>
