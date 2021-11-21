@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>InitMethodApproaches</display-name>
+  <!-- Servlet Configuration -->
+  <servlet>
+  		<servlet-name>approach1</servlet-name>
+  		<servlet-class>com.kedar.servlets.InitMethodApproach1Servlet</servlet-class>
+  		<init-param>
+  			<param-name>DBUrl</param-name>
+  			<param-value>oracle:jdbc:thin:@localhost:1521</param-value>
+  		</init-param>
+  </servlet>
+  <!-- Servlet Mapping Configuration -->
+  <servlet-mapping>
+  	<servlet-name>approach1</servlet-name>
+  	<url-pattern>/approach1</url-pattern>
+  </servlet-mapping>
+   <!-- Servlet Configuration -->
+  <servlet>
+  		<servlet-name>approach2</servlet-name>
+  		<servlet-class>com.kedar.servlets.InitMethodApproach2Servlet</servlet-class>
+  		<init-param>
+  			<param-name>DBUrl</param-name>
+  			<param-value>oracle:jdbc:thin:@localhost:1521</param-value>
+  		</init-param>
+  </servlet>
+  <!-- Servlet Mapping Configuration -->
+  <servlet-mapping>
+  	<servlet-name>approach2</servlet-name>
+  	<url-pattern>/approach2</url-pattern>
+  </servlet-mapping>
+</web-app>
