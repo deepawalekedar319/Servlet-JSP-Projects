@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>GetEmployeeDetails</display-name>
+  <welcome-file-list>
+    <welcome-file>home.html</welcome-file>
+  </welcome-file-list>
+  <!-- Servlet Configuration -->
+  <servlet>
+  	<servlet-name>test</servlet-name>
+  	<servlet-class>com.kedar.servlets.TestServlet</servlet-class>
+  	<init-param>
+  		<param-name>dbClass</param-name>
+  		<param-value>oracle.jdbc.driver.OracleDriver</param-value>
+  	</init-param> 
+  	<init-param>
+  		<param-name>dbUrl</param-name>
+  		<param-value>jdbc:oracle:thin:@localhost:1521:xe</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>dbUserName</param-name>
+  		<param-value>advjava</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>dbPassword</param-name>
+  		<param-value>tiger</param-value>
+  	</init-param>
+  </servlet>
+  <!-- Servlet Mapping configuration -->
+  <servlet-mapping>
+  	<servlet-name>test</servlet-name>
+  	<url-pattern>/testServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Servlet Configuration -->
+  <servlet>
+  	<servlet-name>test1</servlet-name>
+  	<servlet-class>com.kedar.servlets.AllEmployees</servlet-class>
+  	<init-param>
+  		<param-name>dbClass</param-name>
+  		<param-value>oracle.jdbc.driver.OracleDriver</param-value>
+  	</init-param> 
+  	<init-param>
+  		<param-name>dbUrl</param-name>
+  		<param-value>jdbc:oracle:thin:@localhost:1521:xe</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>dbUserName</param-name>
+  		<param-value>advjava</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>dbPassword</param-name>
+  		<param-value>tiger</param-value>
+  	</init-param>
+  </servlet>
+  	 <!-- Servlet Mapping configuration -->
+  <servlet-mapping>
+  	<servlet-name>test1</servlet-name>
+  	<url-pattern>/getAllEmployee</url-pattern>
+  </servlet-mapping>
+</web-app>
