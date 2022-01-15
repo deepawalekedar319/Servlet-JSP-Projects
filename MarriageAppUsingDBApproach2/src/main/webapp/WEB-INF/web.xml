@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>MarriageAppUsingDBApproach2</display-name>
+  <welcome-file-list>
+    <welcome-file>home.html</welcome-file>
+  </welcome-file-list>
+  <!-- Servlet configuration -->
+  <servlet>
+  	<servlet-name>approach2</servlet-name>
+  	<servlet-class>com.kedar.servlets.Approach2</servlet-class>
+  	<init-param>
+  		<param-name>driverClassName</param-name>
+  		<param-value>oracle.jdbc.driver.OracleDriver</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>driverURL</param-name>
+  		<param-value>jdbc:oracle:thin:@localhost:1521:xe</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>userName</param-name>
+  		<param-value>advjava</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>password</param-name>
+  		<param-value>tiger</param-value>
+  	</init-param>
+  </servlet>
+  <!-- Servlet Mapping Configuration -->
+  <servlet-mapping>
+  		<servlet-name>approach2</servlet-name>
+  		<url-pattern>/register</url-pattern>
+  </servlet-mapping>
+</web-app>

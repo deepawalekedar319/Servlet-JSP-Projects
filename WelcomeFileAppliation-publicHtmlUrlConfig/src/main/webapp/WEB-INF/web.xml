@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>WelcomeFileAppliation</display-name>
+  <!-- Welcome file Configuration -->
+  <welcome-file-list>
+  <welcome-file>welcomeservlet</welcome-file>
+    <welcome-file>index.html</welcome-file>
+   <welcome-file>home.html</welcome-file>
+  </welcome-file-list>
+  <!-- Servlet Configuration -->
+  <servlet>
+  	  <servlet-name>welcome</servlet-name>
+  	  <servlet-class>com.kedar.servlets.WelcomeFileServlet</servlet-class>
+  </servlet>
+  <!-- Welcome file Configuration -->
+  <servlet-mapping>
+  		<servlet-name>welcome</servlet-name>
+  		<url-pattern>/welcomefile</url-pattern>
+  </servlet-mapping>
+  <!-- Servlet Configuration -->
+  <servlet>
+  	  <servlet-name>servletwelcome</servlet-name>
+  	  <servlet-class>com.kedar.servlets.ServletAsAWelcomeFile</servlet-class>
+  </servlet>
+  <!-- Welcome file Configuration -->
+  <servlet-mapping>
+  		<servlet-name>servletwelcome</servlet-name>
+  		<url-pattern>/welcomeservlet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Servlet Configuration -->
+  <servlet>
+  	  <servlet-name>homepage</servlet-name>
+  	  <jsp-file>/WEB-INF/images/home.html</jsp-file>
+  </servlet>
+  <!-- Welcome file Configuration -->
+  <servlet-mapping>
+  		<servlet-name>homepage</servlet-name>
+  		<url-pattern>/home</url-pattern>
+  </servlet-mapping>
+</web-app>

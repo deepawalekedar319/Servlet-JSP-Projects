@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Client and Server Side Form Validation</title>
+	</head>
+	<body>
+		<form action="getTheData" method="POST" onsubmit="return formValidation(this)">
+			<h1 style="color:red;text-align:center;">Client and Server Side Form Validation</h1>
+			Name : &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input name="name" type="text"><br>
+			Email : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input name="email" type="email"><br>
+			Phone Number : <input name="phone" type="number"><br>
+			Age : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input name="age" type="number"><br>
+			Male : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" value="Male" name="gender"><br>
+			Female : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" value="Female" name="gender"><br>	
+			Country : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select name="country">
+									<option value="0">---Select---</option>
+									<option value="1">India</option>
+									<option value="2">Pakistan</option>
+									<option value="3">USA</option>
+									<option value="4">Kanada</option>
+									<option value="5">Europe</option>
+									<option value="6">China</option>
+							</select>	<br><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Register">
+			</form>			
+	</body>
+	<script type="text/javascript" src="JavaScriptFolder/validation.js"></script>
+</html>

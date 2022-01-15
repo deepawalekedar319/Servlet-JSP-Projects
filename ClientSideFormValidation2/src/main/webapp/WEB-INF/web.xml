@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>ClientSideFormValidation2</display-name>
+  <welcome-file-list>
+    <welcome-file>homepage</welcome-file>
+  </welcome-file-list>
+  <!--  Servlet Configuration -->
+  	<servlet>
+  		<servlet-name>client</servlet-name>
+  		<servlet-class>com.kedar.servlets.ClientSideFormValidationServlet</servlet-class>
+  	</servlet>
+  	<!-- Servlet Mapping Configuration -->
+  	<servlet-mapping>
+  		<servlet-name>client</servlet-name>
+  		<url-pattern>/client</url-pattern>
+  	</servlet-mapping>
+  	<!-- Html file Configuration -->
+  	<servlet>
+  		<servlet-name>getFirstPage</servlet-name>
+  		<jsp-file>/home.html</jsp-file>
+  	</servlet>
+  	<!-- Html Mapping Configuration -->
+  	<servlet-mapping>
+  		<servlet-name>getFirstPage</servlet-name>
+  		<url-pattern>/homepage</url-pattern>
+  	</servlet-mapping>
+</web-app>
