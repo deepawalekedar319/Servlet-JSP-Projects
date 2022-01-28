@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Marriage Registration Form</title>
+</head>
+<body style="background:linear-gradient(to right, #ccffff,#000000);">
+	<h1 style="text-align:center; color:red"> Marriage Registration</h1><hr><br>
+	<form action="register" method="POST" enctype="multipart/form-data">
+		<table border = "5" bgcolor=cyan align=center style="font-size:30px;">
+			  <tr>
+			    <td>First Name :: </td>
+			    <td><input type="text" name = "fName" placeholder = "Enter First Name"></td>
+			  </tr>
+			  <tr>
+			    <td>Last Name :: </td>
+			    <td><input type="text" name = "lName" placeholder = "Enter Last Name"></td>
+			  </tr>
+			  <tr>
+			    <td>E-mail :: </td>
+			    <td><input type="email" name = "email" placeholder = "Enter E-mail"></td>
+			  </tr>
+			  <tr>
+			    <td>Phone Number :: </td>
+			    <td><input type="tel" name = "pno" placeholder = "Enter Phone Number"></td>
+			  </tr>
+			  <tr>
+			    <td>Age :: </td>
+			    <td><input type="number" name = "age" placeholder = "Enter Age"></td>
+			  </tr>
+			  <tr>
+			    <td>Select Gender :: </td>
+			    <td><input type="radio" name = "gender" value="male"> Male &nbsp; 
+			    		<input type="radio" name = "gender" value="female"> Female </td>
+			  </tr>
+			  <tr>
+			    <td>Occupation :: </td>
+			    <td><input type="text" name = "oup" placeholder = "Enter Occupation"></td>
+			  </tr>
+			  <tr>
+			    <td>Salary :: </td>
+			    <td><input type="number" name = "sal" placeholder = "Enter Salary"></td>
+			  </tr>
+			  <tr>
+			    <td>Resume :: </td>
+			    <td><input type="file" name = "resume" ></td>
+			  </tr>
+			  <tr>
+			    <td>Photo :: </td>
+			    <td><input type="file" name = "photo" ></td>
+			  </tr>
+			  <tr>
+			    <td align="center"><input type="submit" value = "Register" ></td>
+			    <td align="center"><input type="reset" value = "Cancel" ></td>
+			  </tr>
+		</table>
+		<h1 align='center'><a href='home.html'>Home</a></h1>
+	</form>
+</body>
+</html>
